@@ -1,0 +1,1 @@
+nsys profile -w true -t cuda,nvtx,osrt,cudnn,cublas --cudabacktrace=true -x true -o llama-nvtx-opt-100 --force-overwrite true python llama.py --use_4bit --lora --max_length 1024 --num 100
